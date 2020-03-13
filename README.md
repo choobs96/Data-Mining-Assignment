@@ -6,14 +6,14 @@
 
 ## Milestone 1: Acquisition of Data
 Requirements for python script:
-Libraries
+Libraries:
 1) pandas
 2) Beautiful soup
 3) request
 4) selenium
 5) pandas_datareader
 6) time
-Driver
+Driver:
 1) Chromedriver (make sure it's the same version with your google chrome)
 
 There are 5 parts:
