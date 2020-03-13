@@ -5,6 +5,17 @@
 1) WQD180124 Choo Jian Wei
 
 ## Milestone 1: Acquisition of Data
+Requirements for python script:
+Libraries
+1) pandas
+2) Beautiful soup
+3) request
+4) selenium
+5) pandas_datareader
+6) time
+Driver
+1) Chromedriver (make sure it's the same version with your google chrome)
+
 There are 5 parts:
 1) Scrape data from MalysianStockBiz to get Top 10 Property Stock data sort by Market Cap
 2) Top 10 Property Stock Historical Data (10 Years)
