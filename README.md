@@ -20,3 +20,5 @@ There are 5 parts:
 3) KLSE data from Yahoo Finance (10 Years)
 4) Bursa Announcement data (Max)
 5) Quarterly report data from MalaysianStockBiz (Max)
+
+Link to youtube video: https://youtu.be/LAiL65JRsaU
