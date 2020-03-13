@@ -5,8 +5,7 @@
 1) WQD180124 Choo Jian Wei
 
 ## Milestone 1: Acquisition of Data
-###Requirements for python script:
-Libraries & Driver
+Requirements for python script (Libraries & Driver):
 1) pandas
 2) Beautiful soup
 3) request
