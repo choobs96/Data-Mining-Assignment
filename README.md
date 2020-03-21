@@ -22,3 +22,19 @@ There are 5 parts:
 5) Quarterly report data from MalaysianStockBiz (Max)
 
 Link to youtube video: https://youtu.be/LAiL65JRsaU
+
+
+## Milestone 2: Management of Data
+Requirements for python script (Libraries & Driver):
+1) pandas
+2) VMWare https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
+3) Hive & Hadoop using Dr. Hoo image https://drive.google.com/file/d/11WrsLOXzlveWJ2TnX7wKRpDCcH-03YWY/view?usp=sharing 
+
+There are 3 parts:
+1) Data cleaning
+2) Checking the table columns and their respective data type
+3) Creating Hive tables
+4) Using VMWare to run Hive
+5) Loading data into Hive
+
+Link to youtube video: https://youtu.be/UEbUq-h-ksA
