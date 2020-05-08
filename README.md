@@ -38,3 +38,14 @@ There are 3 parts:
 5) Loading data into Hive
 
 Link to youtube video: https://youtu.be/UEbUq-h-ksA
+
+## Week 7 Data Cleaning
+Requirements for python libraries:
+1)Numpy
+2)Pandas
+
+Data cleaning for 5 datasets.
+a) Change column type
+b) Check for null and fix null values
+c) Convert data format of certain columns
+d) Rename column name
