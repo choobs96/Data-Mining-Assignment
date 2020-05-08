@@ -44,7 +44,7 @@ Requirements for python libraries:
 1)Numpy
 2)Pandas
 
-Data cleaning for 5 datasets.
+Data cleaning for 5 datasets:
 a) Change column type
 b) Check for null and fix null values
 c) Convert data format of certain columns
