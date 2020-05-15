@@ -62,5 +62,7 @@ There are 3 parts:
 3) Uploading the data too GCP bucket
 4) Create table for each of the files
 5) Linking up Big Query with Python
+5a) Authentication can be learn via: https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries#client-libraries-install-python
+5b) Add downloaded JSON file to your bashrc and source it. (E.g. export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/wqd_datamining) 
 
 Link to youtube video: https://www.youtube.com/watch?v=U67gD8FFybw
