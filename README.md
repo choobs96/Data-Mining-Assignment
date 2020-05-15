@@ -30,7 +30,7 @@ Requirements for python script (Libraries & Driver):
 2) VMWare https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
 3) Hive & Hadoop using Dr. Hoo image https://drive.google.com/file/d/11WrsLOXzlveWJ2TnX7wKRpDCcH-03YWY/view?usp=sharing 
 
-There are 3 parts:
+There are 5 parts:
 1) Data cleaning
 2) Checking the table columns and their respective data type
 3) Creating Hive tables
@@ -49,3 +49,18 @@ Data cleaning for 5 datasets:
 2) Check for null and fix null values
 3) Convert data format of certain columns
 4) Rename column name
+
+
+## Milestone 3: (Accessing data warehouse or data lake using Python - Big Query)
+Requirements:
+1) pandas
+2) Google Cloud Platform account (Free $300 Credit)
+
+There are 3 parts:
+1) Converting data into CSV format as GCP doesn't allow "|" as separator
+2) Creating a project in GCP
+3) Uploading the data too GCP bucket
+4) Create table for each of the files
+5) Linking up Big Query with Python
+
+Link to youtube video: https://www.youtube.com/watch?v=U67gD8FFybw
