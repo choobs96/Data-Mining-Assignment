@@ -74,3 +74,4 @@ b) Top 10 property stocks vs KLSE index (Correlation)
 c) Alpha & Beta Analysis (Property stocks compared to KLSE market index)
 d) Prediction using LSTM, Linear Regression and Support vector regressor
 Link to youtube video: https://youtu.be/2EcMVJUbSL8
+Analytics: We should invest in 5606.KL, 1651.KL and 5200.KL (Negative Beta Stocks)
