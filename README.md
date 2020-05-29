@@ -66,3 +66,11 @@ There are 3 parts:
 5b) Add downloaded JSON file to your bashrc and source it. (E.g. export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/wqd_datamining) 
 
 Link to youtube video: https://www.youtube.com/watch?v=U67gD8FFybw
+
+##Milestone 4: Interpretation of data & Communication of insights
+There are a few parts:
+a) Top 10 property stocks analysis 
+b) Top 10 property stocks vs KLSE index (Correlation)
+c) Alpha & Beta Analysis (Property stocks compared to KLSE market index)
+d) Prediction using LSTM, Linear Regression and Support vector regressor
+Link to youtube video: https://youtu.be/2EcMVJUbSL8
