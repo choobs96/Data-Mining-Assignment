@@ -67,7 +67,7 @@ There are 3 parts:
 
 Link to youtube video: https://www.youtube.com/watch?v=U67gD8FFybw
 
-##Milestone 4: Interpretation of data & Communication of insights
+## Milestone 4: Interpretation of data & Communication of insights
 There are a few parts:
 a) Top 10 property stocks analysis 
 b) Top 10 property stocks vs KLSE index (Correlation)
