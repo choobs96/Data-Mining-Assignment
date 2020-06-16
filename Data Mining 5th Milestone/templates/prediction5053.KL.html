@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Prediction 5053.KL</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<!-- Image and text -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <img src="/static/UM.png" width="80" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+	<a class="navbar-brand" style="margin-left:20px" href="#">WQD7005 Data Mining</a>			
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:5000/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Analysis
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis2">Analysis 2</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis3">Analysis 3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/prediction5200.KL">Prediction</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/choobs96">Github <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.linkedin.com/in/jianweichoo/">LinkedIn <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="jumbotron">
+	<h1 class="display-4">Data Mining Milestone 5</h1>
+	<p class="lead"> Prediction on Selected Stocks</p>
+	<hr class="my-4">
+	<p>Based on the analysis in Analysis 3, 4 property (+β) stocks: <b>3158.KL, 5053.KL, 8206.KL and 8664.KL</b> were suggested.</p>	
+	<p><b>Check out the previous analysis here.</b></p>
+	<a class="btn btn-primary btn-lg" href="http://127.0.0.1:5000/analysis3" role="button">Analysis 3</a>
+	<br></br>
+	<p class="lead"> <b>Check out the predictions for +/- Beta Stocks</b></p>
+	<div class="btn-group p-2 mb-2" role="group" aria-label="Basic example">
+		<a href="http://127.0.0.1:5000/prediction5200.KL" class="btn btn-info" role="button">(-β) stocks</a>
+		<a href="http://127.0.0.1:5000/prediction3158.KL" class="btn btn-warning" role="button">(+β) stocks</a>
+	</div>
+	<p>Note that the predictions are for references use only.</p>
+</div>
+
+<div class = "text-center">
+	<p class="lead"> <b>Select the stock</b></p>
+	<div class="btn-group p-2 mb-2" role="group" aria-label="Basic example">
+		<a href="http://127.0.0.1:5000/prediction3158.KL" class="btn btn-warning" role="button">3158.KL</a>
+		<a href="http://127.0.0.1:5000/prediction5053.KL" class="btn btn-warning" role="button">5053.KL</a>
+		<a href="http://127.0.0.1:5000/prediction8206.KL" class="btn btn-warning" role="button">8206.KL</a>
+		<a href="http://127.0.0.1:5000/prediction8664.KL" class="btn btn-warning" role="button">8664.KL</a>
+	</div>
+	<p><b><u> All 4 predictions are not accurate due to the lack of data since 2018 </u></b></p>
+</div>
+
+<div class="container-fluid .mr-3">
+	<div class = "text-center">
+		<hr class="my-4">
+		<p class="lead"><b><u> Prediction of Stock's Closing price (Today): 5053.KL using Long Short Term Memory (LSTM) </u></b></p>
+		<img src="/static/prediction_lstm_5053.png" "class="mx-auto d-block" alt="Scatter Matrix">
+		<div class = "text-center">
+			<span class = "col p-10 m-0 text-center">Using the trained model on 5053.KL we predict the price closing price for today.</span>
+		</div>
+		<p>Since data is up till 2018, today's price is not valid based on LSTM predictions</p>
+		<h3>Predictions for today's price: RM {{ pred_price }}<h3>
+		<h3>Actual price: RM {{ actual }}<h3>
+		<hr class="my-4">		
+	</div>
+</div>
+<div>
+	<p>
+	<div class = "text-center">
+	  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		Show Prediction vs Validation Data (LSTM)
+	  </button>
+	</div>
+	</p>
+	<div class = "text-center">
+		<div class="collapse" id="collapseExample">
+		<p>Root Mean Square Error : {{ rmse }}<p>
+		  <div class="card card-body">
+				{% for table in tables %}
+				<h2>{{titles[loop.index]}}</h2>
+				{{ table|safe }}
+				{% endfor %}
+		  </div>
+	</div>
+	</div>
+</div>
+<div class="container">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	
+    <div class = "text-center">
+	<p class="lead"><b><u> Prediction of Stock's Closing Price (Next 30 Days): 5053.KL using Support Vector Machine (SVM) and Linear Regression (LR) </u></b></p>
+        <div>
+            <div class="chart" id="bargraph">
+				<script>
+					var graphs = {{plot | safe}};
+					Plotly.plot('bargraph',graphs,{});										
+				</script>
+            </div>
+        </div>
+    </div>
+	<div class = "text-center">
+		<h3>svm_confidence is {{ svm_confidence }}<h3>
+		<h3>lr_confidence is {{ lr_confidence }}<h3>
+	</div>
+</div>
+
+
+
+</body>
+</html>

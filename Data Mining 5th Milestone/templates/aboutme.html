@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My First Dashboard</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<!-- Image and text -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <img src="/static/UM.png" width="80" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+	<a class="navbar-brand" style="margin-left:20px" href="#">WQD7005 Data Mining</a>			
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:5000/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Analysis
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis2">Analysis 2</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis3">Analysis 3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Prediction</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="jumbotron">
+	<h1 class="display-4">About Me</h1>
+	<p class="lead"> My name is Jian Wei. I am currently pursuing a Master in Data Science at University Malaya. Meanwhile, I am also working full-time as a Business Analyst at one of the largest media company: Star Media Group.</p>
+	<hr class="my-4">
+	<p>In this part, I am going to do an Alpha (α) & Beta (β) Analysis on the Top 10 Property Stocks.</p>	
+</div>
+
+
+
+
+
+</body>
+</html>

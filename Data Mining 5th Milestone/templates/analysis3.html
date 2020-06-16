@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Alpha & Beta Analysis</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<!-- Image and text -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <img src="/static/UM.png" width="80" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+	<a class="navbar-brand" style="margin-left:20px" href="#">WQD7005 Data Mining</a>			
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:5000/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Analysis
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis2">Analysis 2</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/analysis3">Analysis 3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="http://127.0.0.1:5000/prediction5200.KL">Prediction</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/choobs96">Github <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.linkedin.com/in/jianweichoo/">LinkedIn <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="jumbotron">
+	<h1 class="display-4">Data Mining Milestone 5</h1>
+	<p class="lead"> Alpha (α) & Beta (β) Analysis on Top 10 Property Stocks</p>
+	<hr class="my-4">
+	<p>In this part, I am going to do an Alpha (α) & Beta (β) Analysis on the Top 10 Property Stocks.</p>	
+	<p><b>Check out the stock predictions here.</b></p>
+	<a class="btn btn-primary btn-lg" href="http://127.0.0.1:5000/prediction5200.KL" role="button">Predictions</a>
+	<br></br>
+</div>
+
+<div class="container-fluid">
+  <u><h1>Alpha(α) & Beta(β) of Top 10 Property Stocks compared to KLSE Index</h1></u>
+  <h6>Note: Alpha(α) shows how well (or badly) a stock has performed in comparison to a benchmark index.
+	Beta(β) indicates how volatile a stock's price has been in comparison to the market as a whole.
+	A high alpha(α) is always good.
+	A high beta(β) may be preferred by an investor in growth stocks but shunned by investors who seek steady returns and lower risk.
+	An alpha(α) of 1.0 means the investment outperformed its benchmark index by 1%. </h6>
+  {% for table in tables %}
+	<h2>{{titles[loop.index]}}</h2>
+	{{ table|safe }}
+  {% endfor %}
+  <p>Preference in stock investment using Alpha & Beta can be visualised via a chart.</p>
+</div>
+
+<div class="container-fluid .mr-3">
+	<div class = "text-center">
+		<hr class="my-4">
+		<p class="lead"><b><u> Alpha & Beta Analysis Chart</u></b></p>
+		<img src="/static/figure_3.jpg" "class="mx-auto d-block" alt="Scatter Matrix">
+		<div class = "text-center">
+			<span class = "col p-10 m-0 text-center">Based on the note above, investor would invest in Positive Alpha (+α) stocks. Besides that, depending on the market condition we will decide to invest in Positive (+β) and Negative (-β) Beta stocks</span>
+			<br>
+			<span class = "col p-10 m-0 text-center">Due to the Covid-19 market condition, we presume that the market is in a bad condition. Thus, we would suggest to invest in Positive Alpha(+α) and Negative Beta(-β) Stocks</span>
+			<br>
+			<span class = "col p-10 m-0 text-center"><b>Suggested stock to invest (-β) stocks: 5606.KL, 5200.KL and 1651.KL</b></span>
+			<br>
+			<span class = "col p-10 m-0 text-center"><b>Suggested stock to invest (+β) stocks: 5053.KL, 3158.KL, 8206.KL and 8664.KL</b></span>
+		</div>
+		<hr class="my-4">		
+		<div class = "text-center">
+			<p class="lead"> <b>Check out the predictions for +/- Beta Stocks</b></p>
+			<div class="btn-group p-2 mb-2" role="group" aria-label="Basic example">
+				<a href="http://127.0.0.1:5000/prediction5200.KL" class="btn btn-info" role="button">(-β) stocks</a>
+				<a href="http://127.0.0.1:5000/prediction3158.KL" class="btn btn-warning" role="button">(+β) stocks</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
