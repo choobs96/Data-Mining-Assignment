@@ -75,3 +75,10 @@ c) Alpha & Beta Analysis (Property stocks compared to KLSE market index)
 d) Prediction using LSTM, Linear Regression and Support vector regressor
 Link to youtube video: https://youtu.be/2EcMVJUbSL8
 Analytics: We should invest in 5606.KL, 1651.KL and 5200.KL (Negative Beta Stocks)
+
+## Milestone 5: Deployment using Flask
+a) Create the run.py files and importing the relevant libraries such as flask, numpy, pandas, plotly, tensorflow & keras.
+b) Create the html files for each pages and link them to the url in run.py
+c) Plot using plotly and figures are shown using img tag in html
+d) Train model for each stocks and load it to the python file.
+e) Beautify the website using Bootstrap classes.
